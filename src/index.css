@@ -1,6 +1,7 @@
 #root{
     top: 106px;
     position: relative;
+    padding: 0 !important;
 }
 .navbar{
     background-color: #2C3E50;
@@ -15,12 +16,46 @@
 .nav-item >a{
     color: #fff !important;
 }
+.active{
+    background-color: #1abc9c;
+    border-radius: 7px;
+}
 .transition{
     transition: all 500ms;
 }
 .home{
     background-color: #1abc9c !important;
 }
-.img{
-    background-image: url(https://routeegy.github.io/startFramework/assets/images/avataaars.svg);
+.image{
+    width: 250px !important;
+    padding-bottom: 30px;
+}
+.star-cont{
+    position: relative;
+    margin-bottom: 5px;
+}
+.star-cont::before,.star-cont::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    transform:translateY(-50%);
+}
+.star-cont::before{
+    right:35px;
+}
+.star-cont::after{
+    left:35px;
+}
+.footer{
+    background-color: #2C3E50;
+    padding-bottom: 0 !important;
+    .social-icons>i{
+        border: 1px solid #fff;
+        padding: 10px;
+    }
+    .dark-footer{
+        background-color: #1A252F !important;
+    }
 }

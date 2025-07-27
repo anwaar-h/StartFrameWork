@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink , Link } from "react-router-dom";
 export default function Navbar() {
+    
+    // navbar expanding
     const [isScroll, setisScroll] = useState(false)
     window.addEventListener("scroll",function(){
         if (scrollY>0){
@@ -13,9 +15,9 @@ export default function Navbar() {
     return (
         <nav className={`navbar navbar-expand-lg transition fixed-top ${isScroll?"":"py-4"}`}>
             <div className="container">
-                <a className="navbar-brand text-uppercase" href="/">
+                <Link className="navbar-brand text-uppercase" to="/home">
                     Start Framework
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -30,19 +32,19 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav">
                         <li className="nav-item me-3">
-                            <a className="nav-link text-uppercase" href="/about">
+                            <NavLink className="nav-link text-uppercase" to="/about">
                                 About
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-uppercase" href="/portfolio">
+                            <NavLink className="nav-link text-uppercase" to="/portfolio">
                                 Portfolio
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-uppercase" href="/contact">
+                            <NavLink className="nav-link text-uppercase" to="/contact">
                                 Contact
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

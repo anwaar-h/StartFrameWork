@@ -1,19 +1,17 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import img from "../assets/avataaars.svg"
 
 export default function Home() {
   return (
     <>
-    <Navbar/>
-    <div className="home">
-        <div className="container">
-        <div className="row">
-            <div className="col-md-4">
-                <img src="./src/assets/avataaars.svg" alt="image" />
-            </div>
+    <div className="home d-flex align-items-center justify-content-center flex-column w-100 text-white">
+                <img src={img} alt="image" className='image mx-2' />
+                <h1 className='fw-bold my-3 text-uppercase' >start Framework</h1>
+                <div className='star-cont d-flex justify-content-center align-items-center'>
+                    <i className="fa-solid fa-star"></i>
+                </div>
+                <p className='m-3'>Graphic Artist - Web Designer - Illustrator</p>
         </div>
-        </div>
-    </div>
     </>
   )
 }
