@@ -48,6 +48,46 @@
 .star-cont::after{
     left:35px;
 }
+.star-cont.blue-star{
+    color: #2C3E50;
+}
+.star-cont.blue-star::before,
+.star-cont.blue-star::after {
+    background-color: #2C3E50;
+}
+.blue-txt{
+    color: #2C3E50;
+}
+
+/* portfolio */
+.img-cont{
+    position: relative;
+}
+.layer{
+    position: absolute;
+    background-color: rgb(26, 188, 156, 0.9);
+    opacity: 0;
+    inset: 0;
+    transition: all 500ms;
+}
+.img-cont:hover .layer{
+    opacity: 1;
+}
+.layer i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+.layer-img{
+    width: 47%;
+    z-index: 99999 !important;
+}
+.modal{
+    z-index: 9999;
+}
 .footer{
     background-color: #2C3E50;
     padding-bottom: 0 !important;
