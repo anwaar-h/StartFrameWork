@@ -88,6 +88,42 @@
 .modal{
     z-index: 9999;
 }
+/* contact */
+input{
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-btn{
+    background-color: #1abc9c;
+    color: #fff;
+    width: fit-content;
+    &:hover{
+        background-color: #1abc9c;
+        color: #fff;
+        transition: none;
+    }
+}
+label{
+    color: #1abc9c;
+    opacity: 0;
+}
+.move-label{
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.transition{
+    transition: all 500ms;
+}
+/* footer */
 .footer{
     background-color: #2C3E50;
     padding-bottom: 0 !important;
