@@ -23,7 +23,7 @@
 .transition{
     transition: all 500ms;
 }
-.home{
+.home, .about{
     background-color: #1abc9c !important;
 }
 .image{
